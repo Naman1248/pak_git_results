@@ -1,0 +1,26 @@
+ALTER TABLE `majors` ADD `duesInWord` VARCHAR(500) NOT NULL AFTER `dues`;
+
+ALTER TABLE `district` CHANGE `provinceid` `provinceId` TINYINT(4) NULL DEFAULT NULL;
+
+ALTER TABLE `countries` ADD PRIMARY KEY(`countryId`);
+
+ALTER TABLE `applications` CHANGE `baseType` `childBase` VARCHAR(25) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+tail -f /var/log/apache2/error.log
+
+
+
+=======================================
+
+INSERT INTO `fields` (`fieldId`, `fieldName`, `colName`) VALUES ('3', 'admissionBaseChild', 'childBase');
+
+INSERT INTO `classForms` (`Id`, `cCode`, `frmId`, `fieldId`, `status`) VALUES (NULL, '100', '1', '3', '');
+
+ALTER TABLE `applications` CHANGE `baseId` `baseId` INT(11) NULL DEFAULT '0';
+
+ALTER TABLE `applications` CHANGE `childBase` `childBase` INT(25) NULL DEFAULT '0';
+
+ALTER TABLE `education` ADD `schoolName` VARCHAR(500) NOT NULL AFTER `majSub`;
+
+ALTER TABLE `education` ADD `schoolStatus` VARCHAR(10) NOT NULL AFTER `schoolName`;
+==========================================================================================================================
