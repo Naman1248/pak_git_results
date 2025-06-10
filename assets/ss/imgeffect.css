@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+		
+	
+	#gallery {
+		width: 350px;
+		height: 200px;
+		margin: 15% auto;
+		padding: 5px;
+		position: relative;}
+	
+		#gallery div {
+			background: #fff;
+			position: absolute;
+			overflow: hidden;
+			opacity: 0.9;
+			-webkit-transition: all 1000ms linear;
+
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+
+			-webkit-box-shadow: -3px -3px 50px #666;
+			-moz-box-shadow: -3px -3px 50px #666;
+			box-shadow: -3px -3px 50px #666;}
+			
+		#gallery div#img1:hover,
+		#gallery div#img2:hover,
+		#gallery div#img3:hover,
+		#gallery div#img4:hover,
+		#gallery div#img5:hover,
+		#gallery div#img6:hover,
+		#gallery div#img7:hover {
+			z-index: 999;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			opacity: 1;}		
+		
+		
+		#gallery span {
+			position: absolute;
+			right: 0;
+			bottom: 10px;
+			color: #fff;
+			text-align: right;
+			padding: 5px;
+			font-size: 10px;
+			font-weight: bold;}
+		
+		#gallery #img1 {
+			-webkit-transform: rotate(-15deg);
+			-moz-transform: rotate(-15deg);
+			top: 25%;
+			right: -25%;
+			z-index:1;}
+			
+		#gallery #img2 {
+			-webkit-transform: rotate(-15deg);
+			-moz-transform: rotate(-15deg);
+			top: 0%;
+			right:5%;
+			z-index:7;}
+			
+		#gallery #img3 {
+			-webkit-transform: rotate(-5deg);
+			-moz-transform: rotate(-15deg);
+			top: 35%;
+			right:35%;
+			z-index:3;}
+
+		#gallery #img4 {
+			-webkit-transform: rotate(10deg);
+			-moz-transform: rotate(10deg);
+			top: -30%;
+			right: 10%;
+			z-index:4;}
+			
+		#gallery #img5 {
+			-webkit-transform: rotate(5deg);
+			-moz-transform: rotate(5deg);
+			top: 80%;
+			right: 20%;
+			z-index:5;}
+			
+		#gallery #img6 {
+			-webkit-transform: rotate(20deg);
+			-moz-transform: rotate(20deg);
+			top: 75%;
+			right: -10%;
+			z-index:6;}
+			
+		#gallery #img7 {
+			-webkit-transform: rotate(20deg);
+			-moz-transform: rotate(20deg);
+			top: 10%;
+			right: 52%;
+			z-index:2;}
+			

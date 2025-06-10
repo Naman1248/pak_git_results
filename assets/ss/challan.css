@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:8px;
+    }
+    img{
+        float:left;
+        margin-left:10%;
+
+    }
+    thead{
+        text-align:center;
+        font-weight:bold;
+        font-size:12px;
+    }
+    tbody{
+        font-size:10x;
+    }
+    td{
+        padding:3px;
+
+    }
+    .tdline{
+        border-bottom:1px solid #000000;
+    }
+    .col3{
+        text-align:right;
+        padding-right:10px;
+
+    }
+
+

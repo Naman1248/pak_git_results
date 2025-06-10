@@ -1,0 +1,89 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+page {
+			background: white;
+			width: 21cm;
+			height: 29.7cm;
+			display: block;
+			margin: 0 auto;
+			padding: 5px 12px;
+			margin-bottom: 0.5cm;
+			box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+		}
+
+		page[size="A4"] {  
+			width: 21cm;
+			height: 29.7cm; 
+		}
+		page[size="A4"][layout="landscape"] {  
+			width: 29.7cm;
+			height: 21cm; 
+		}
+			h1,h2,h3,h4{
+			  margin: 0;
+			  padding: 0;
+			  line-height: 1.5;
+			}
+			.txt{
+				font-size: 11px;
+			}
+			th{
+				height:30px;
+			}
+			td{
+				text-align:center;
+				height:60px;
+			}
+			.subj{
+				font-size:12px;
+				text-transform:uppercase;
+				font-weight:bold;
+				display:block;
+			}
+			.rotated {
+				writing-mode: tb-rl;
+				transform: rotate(-180deg);
+				white-space: nowrap;
+			}
+			.entry{
+				margin-right:5%;
+				text-decoration:underline;
+				padding: 10px;
+			}
+			.arrow {
+				position: absolute;
+				margin-top:32px;
+				margin-left:255px;
+				width: 85px;				
+			}
+			.arrow1 {
+				position: absolute;
+				margin-top:32px;
+				margin-left:410px;
+				width: 85px;				
+			}
+			.arrow2 {
+				position: absolute;
+				margin-top:32px;
+				margin-left:570px;
+				width: 85px;				
+			}
+			.line {
+				margin-top:5px;
+				width:75px;
+				background:black;
+				height:4px;
+				float:left;
+			}
+			.point {	
+				width: 0; 
+				height: 0; 
+				border-top: 7px solid transparent;
+				border-bottom: 7px solid transparent;
+				border-left: 10px solid black;
+				float:right;
+			}

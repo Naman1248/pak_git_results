@@ -1,0 +1,292 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    -webkit-print-color-adjust: exact;
+}
+
+page {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 12px;
+    margin-bottom: 0.5cm;
+    /*box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+}
+
+page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+}
+page[size="A4"][layout="landscape"]{
+    width:29.7cm;
+    height: 21cm;
+    padding: 0px 7px;
+}
+.theading {
+    background-color: #ececec;
+    color:#000;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+}
+.heading {
+    color:#000;
+    font-weight: bold;
+    vertical-align:middle;
+    padding-left:3px;
+}
+.photo {
+    width: 100px;
+    height: 125px;
+    vertical-align:middle;
+}	
+.txtoffice {
+    font-size: 12px; 
+    color: #ccc; 
+    text-align:right;
+}
+table{
+    display: table;
+    border-spacing: 0px;
+    border-collapse: separate;
+    width:100%;
+}
+.txtsize{
+    font-size:11px;
+}
+th{
+    color:#000;
+    background-color: #ececec;
+    font-weight:bold;
+    vertical-align:middle;
+    padding: 3px 3px;
+    word-break:break-all;
+}
+td{
+    vertical-align:middle;
+    padding: 0px 3px;
+    word-break:break-all;
+}
+.trow{
+    height:30px;
+}
+.top {
+    background-color:#800000;
+    padding:5px; 
+    text-align:right;
+    vertical-align:middle;
+    margin-bottom:10px;
+}
+ul{
+    padding: 0% 7%;
+}
+li {
+    text-align:justify;
+}
+h2, h3, h4{
+    padding:0px;
+    margin:0px
+}
+.dvborder{
+    border: 1px solid #000	
+}
+.btn {
+    background-color:#ffec64;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:8px;
+    font-weight:bold;
+    padding:4px 16px;
+    text-decoration:none;
+}
+.btn:hover {
+    background-color:#ffab23;
+}
+.btn:active {
+    position:relative;
+    top:1px;
+}
+
+/*	ol.roman {
+                display: list-item;
+                list-style-position: outside;
+                text-align:justify;
+                padding-left: 25px;		
+                
+        }
+/*	ul.roman li {
+            list-style-type: lower-roman;
+                list-style-position: outside;
+                padding: 0px 10px;	   
+        }	*/
+ol.roman li {
+    list-style-type: lower-roman;
+    list-style-position: outside;
+    padding: 2px 10px;	   
+}	
+.divider {
+    border-top: 2px dashed #000;
+}
+/***********Challan*******************/
+hbl-logo{
+    float:left;
+    margin-left:10%;
+}
+
+
+.tdline{
+    border-bottom:1px solid #000000;
+}
+.col3{
+    text-align:right;
+    padding-right:10px;
+
+}
+/************time table*******************/
+.tmlogo{
+    width:75px;
+}
+.tmdetail{
+    text-align:center; 
+    padding:5px;
+    font-size: 14px;
+}
+.tmtxt{
+    font-weight: bold;
+    text-decoration:underline;
+}
+#tmtable{
+    table-layout:fixed;
+    border:1px solid #000;
+    width: 100%;
+	font-size:10px;
+}
+#tmtable th{
+    height:25px;
+    border: 1px solid #000;
+    word-break: normal;
+	padding: 0px;
+}
+.tmtableth{
+	height:30px;
+	padding: 0px;
+	margin: 0px;
+}
+#tmtable td{
+    text-align:center;
+    height:60px;
+    max-width: 70px;
+    padding: 3px;
+    border: 1px solid #000;
+    vertical-align: middle;
+    word-break: normal;
+}
+.tmsubj{
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.rotated {
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180.0deg);
+	-o-transform: rotate(-180.0deg);
+    white-space: nowrap;
+    font-weight: bold;
+}
+.arrow {
+    position: absolute;
+    margin-top:32px;
+    margin-left:265px;
+    width: 85px;				
+}
+.arrow1 {
+    position: absolute;
+    margin-top:20px;
+    margin-left:430px;
+    width: 85px;				
+}
+.arrow2 {
+    position: absolute;
+    margin-top:32px;
+    margin-left:610px;
+    width: 85px;				
+}
+.line {
+    margin-top:5px;
+    width:75px;
+    background:black;
+    height:4px;
+    float:left;
+}
+.point {	
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid black;
+    float: right;
+}
+.row
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+.column
+{
+    display: table-cell;
+	text-align: center;
+	padding: 15px 20px;
+
+}
+/*fee challan*/
+.feetable{
+    table-layout:fixed;
+    width: 100%;
+	font-size:10px;	
+}
+.feetable th{
+	font-weight: bold;
+  
+}
+.feetable td{
+	border-bottom: 1px solid #000;
+	line-height:15px;    
+}
+.feetable th:last-child,
+td:last-child {
+    text-align: right;
+	padding-right: 10px;
+}
+@media print {
+    body, page[size="A4"] {
+        margin: 0;
+        box-shadow: 0;
+    }
+    page[size="A4"][layout="landscape"]{
+        width:29.7cm;
+        height: 21cm;
+    }
+    .line {
+        margin-top:5px;
+        width:75px;
+        background:black;
+        height:4px;
+        float:left;
+    }
+    .noprint{
+        display: none !important;
+
+    }
+
+}

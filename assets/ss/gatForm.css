@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    width: 100%
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px !important;
+	
+}
+page[size="A4"] {
+        background: white;
+        width: 21cm;
+        height: 28cm;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+    }
+    .heading {
+        color:#000;
+        font-weight: bold;
+        font-size: 12px;
+        vertical-align:middle;
+        padding-left:3px;
+    }
+    .photo {
+        width: 100px;
+        height: 125px;
+        vertical-align:middle;
+    }	
+    table{
+        display: table;
+        width:100%;
+    }
+    table td{
+        overflow: hidden;
+        word-wrap: break-word;
+        height: 30px;
+        vertical-align:middle;
+        padding: 0px 3px;
+    }
+    .top {
+        background-color:#800000;
+        padding:5px; 
+        text-align:right;
+        vertical-align:middle;
+        margin-bottom:10px;
+    }
+    h1{
+        margin:3px;
+    }
+    h2, h3{
+        padding:0px;
+        margin:0px
+    }
+    .btn {
+        background-color:#ffec64;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #ffaa22;
+        display:inline-block;
+        cursor:pointer;
+        color:#333333;
+        font-family:Arial;
+        font-size:8px;
+        font-weight:bold;
+        padding:4px 16px;
+        text-decoration:none;
+    }
+    .btn:hover {
+        background-color:#ffab23;
+    }
+    .btn:active {
+        position:relative;
+        top:1px;
+    }
+    
+    @media print {
+        body, page[size="A4"] {
+            width:100%;
+            margin-left: 2.54cm;
+            box-shadow: 0;
+            width: 21cm;
+            height: 29.7cm;
+        }
+        .noprint{
+            display: none !important;
+
+        }
+    }
+    /************ PRINT PAGE *****************/ 
+
+.ptable {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+.pth {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  font-weight:bold;
+  background-color:#ccc;
+  text-align: left;
+  vertical-align:middle;
+}
+.ptd {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  vertical-align:middle;
+  text-align: left;
+}
+.dvborder{
+	border: 1px solid #000	
+	}		
+    .theading {
+        background-color: #ececec;
+        color:#000;
+        font-weight: bold;
+        padding:10px 15px;
+    }
+    .photo {
+        width: 110px;
+        height: 125px;
+        vertical-align:middle;
+    }	
+	
+    .top {
+        background-color:#ececec;
+        padding:5px; 
+        text-align:right;
+        vertical-align:middle;
+    }
+
+ol{
+        list-style-type: 1;
+        margin:10px;
+    }
+    li{
+        margin-top:5px;
+        text-align: justify;
+    }
+  
